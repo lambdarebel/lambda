@@ -1,53 +1,150 @@
-/* Общие стили для тела страницы */
-body {
-  font-family: 'Orbitron', Arial, sans-serif; /* Стиль шрифта в духе антиутопии */
-  background-color: #0b0b0b; /* Тёмный фон */
-  color: #e0e0e0; /* Светлый текст для контраста */
-  margin: 0;
-  padding: 0;
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Антиутопический Мир</title>
+<!-- Шрифт для стилистики -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+<style>
+  /* Общие стили страницы */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Orbitron', Arial, sans-serif;
+    background-color: #0b0b0b; /* мрачно-темный фон */
+    color: #e0e0e0;
+    line-height: 1.5;
+  }
+
+  /* Заголовки */
+ h1 {
+    font-size: 3em;
+    color: #ff4d4d; /* неоновый красный */
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d;
+  }
+
+  /* Навигация */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 30px;
 }
 
-/* Заголовок */
-h1, h2, h3 {
-  font-family: 'Orbitron', Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #ff4d4d; /* Красные оттенки для более мрачно-андеграундного вида */
+nav a {
+  color: #00ffff; /* неоновый голубой для ссылок */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  background-color: #00ffff;
+  color: #000;
+  box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+/* Контейнер с контентом */
+.section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: rgba(11, 11, 11, 0.8);
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+/* Заголовки внутри секций */
+.section h2 {
+  color: #ff4d4d;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 0 5px #ff4d4d, 0 0 10px #ff4d4d;
+}
+
+/* Текст внутри секций */
+.section p {
+  font-size: 1.1em;
   margin-bottom: 20px;
 }
 
-/* Стили для ссылок */
-a {
-  color: #00ffff; /* Ярко-циановый, создаёт эффект неона */
-  text-decoration: none;
-  transition: color 0.3s;
+/* Кнопки */
+button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff4d4d, 0 0 20px #ff4d4d;
+  transition: all 0.3s;
 }
 
-a:hover {
-  color: #ff4d4d; /* при наведении — меняется на красный */
+button:hover {
+  background-color: #fff;
+  color: #ff4d4d;
+  box-shadow: 0 0 20px #ff4d4d, 0 0 40px #ff4d4d;
 }
 
-/* Основной блок контента */
-.content {
-  max-width: 1000px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: rgba(11, 11, 11, 0.8); /* полупрозрачный тёмный фон */
-  border: 2px solid #333; /* тонкая граница */
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /* неоновый эффект тени */
-}
-
-/* Конечные элементы */
+/* Футер */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 30px;
+  background-color: #111;
+  color: #777;
   font-size: 14px;
-  color: #555;
-  background-color: #111; /* Тёмный фон футера */
+  margin-top: 50px;
+  box-shadow: inset 0 0 10px #000;
 }
+</style>
+</head>
+<body>
 
-/* Удаляем плашку Tilda, если она есть */
-.tilda-frame {
-  display: none !important;
-}
+<h1>Мир после Тёмного Века</h1>
+
+<!-- Навигация -->
+<nav>
+  <a href="#about">О мире</a>
+  <a href="#story">История</a>
+  <a href="#contact">Контакты</a>
+</nav>
+
+<!-- Раздел о мире -->
+<div class="section" id="about">
+  <h2>О мире</h2>
+  <p>Это будущее, которое мы не хотели видеть — мрачно, технологично и безжалостно. В этом мире власть держит неоновые знаки, а острые решения и жесткие законы.</p>
+</div>
+
+<!-- Раздел с историей -->
+<div class="section" id="story">
+  <h2>История</h2>
+  <p>Когда-то люди имели свободу. Но технологии заменили человечность, и теперь всё управляется машиной. Остаётся только бороться за свою иллюзию свободы.</p>
+  <button onclick="alert('Бросьте вызов системе!')">Вызов системе</button>
+</div>
+
+<!-- Контактная информация -->
+<div class="section" id="contact">
+  <h2>Контакты</h2>
+  <p>Связаться с командой:</p>
+  <p>Email: dystopia@world.com</p>
+</div>
+
+<!-- Футер -->
+<footer>
+  &copy; 2026. Весь мир в тени. Неоновая эра.
+</footer>
+
+</body>
+</html>
