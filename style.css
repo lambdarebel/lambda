@@ -1,0 +1,106 @@
+/\* Общие стили для тела страницы \*/
+
+body {
+
+&#x20; font-family: 'Orbitron', Arial, sans-serif; /\* Стиль шрифта в духе антиутопии \*/
+
+&#x20; background-color: #0b0b0b; /\* Тёмный фон \*/
+
+&#x20; color: #e0e0e0; /\* Светлый текст для контраста \*/
+
+&#x20; margin: 0;
+
+&#x20; padding: 0;
+
+}
+
+
+
+/\* Заголовок \*/
+
+h1, h2, h3 {
+
+&#x20; font-family: 'Orbitron', Arial, sans-serif;
+
+&#x20; text-transform: uppercase;
+
+&#x20; letter-spacing: 2px;
+
+&#x20; color: #ff4d4d; /\* Красные оттенки для более мрачно-андеграундного вида \*/
+
+&#x20; margin-bottom: 20px;
+
+}
+
+
+
+/\* Стили для ссылок \*/
+
+a {
+
+&#x20; color: #00ffff; /\* Ярко-циановый, создаёт эффект неона \*/
+
+&#x20; text-decoration: none;
+
+&#x20; transition: color 0.3s;
+
+}
+
+
+
+a:hover {
+
+&#x20; color: #ff4d4d; /\* при наведении — меняется на красный \*/
+
+}
+
+
+
+/\* Основной блок контента \*/
+
+.content {
+
+&#x20; max-width: 1000px;
+
+&#x20; margin: 30px auto;
+
+&#x20; padding: 20px;
+
+&#x20; background-color: rgba(11, 11, 11, 0.8); /\* полупрозрачный тёмный фон \*/
+
+&#x20; border: 2px solid #333; /\* тонкая граница \*/
+
+&#x20; border-radius: 8px;
+
+&#x20; box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); /\* неоновый эффект тени \*/
+
+}
+
+
+
+/\* Конечные элементы \*/
+
+footer {
+
+&#x20; text-align: center;
+
+&#x20; padding: 20px;
+
+&#x20; font-size: 14px;
+
+&#x20; color: #555;
+
+&#x20; background-color: #111; /\* Тёмный фон футера \*/
+
+}
+
+
+
+/\* Удаляем плашку Tilda, если она есть \*/
+
+.tilda-frame {
+
+&#x20; display: none !important;
+
+}
+
